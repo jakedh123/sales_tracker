@@ -1,0 +1,46 @@
+{
+  "name": "sales_tracker",
+  "version": "1.0.0",
+  "description": "A powerful tool that automatically gathers and analyzes company information relevant for sales teams",
+  "main": "index.js",
+  "scripts": {
+    "test": "pytest",
+    "lint:python": "flake8 .",
+    "format:python": "black .",
+    "dev": "python sales_tracker.py",
+    "start": "python sales_tracker.py",
+    "prepare-env": "python -m venv venv && pip install -r requirements.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakedh123/sales_tracker.git"
+  },
+  "keywords": [
+    "sales",
+    "web-scraping",
+    "company-analysis",
+    "python",
+    "business-intelligence"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakedh123/sales_tracker/issues"
+  },
+  "homepage": "https://github.com/jakedh123/sales_tracker#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.py": [
+      "black",
+      "flake8"
+    ]
+  }
+}
