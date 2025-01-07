@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Sales Tracker",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/sales_tracker.py",
+            "args": ["https://example.com"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
